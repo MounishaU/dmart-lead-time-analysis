@@ -20,13 +20,13 @@ By simulating different lead times and calculating their impact, this analysis s
 ## Files Included
 
 - **`DMart_sales.csv`** — Raw DMart sales data (Unit Price, Quantity, Total)
-- **`Add_lead_time.py`** — Python script to add a `Lead_Time` column (randomly 1–7 days)
+- **`Add_lead_time.py`** — Python script to add a `Lead_Time` column (random values 1–7 days)
 - **`DMart_sales_with_lead_time.csv`** — Output with simulated lead time
 - **`DMart_analysis.py`** — Python script to:
   - Load sales data
   - Add lead time
   - Calculate holding cost (`Holding Cost = Total × Daily Rate × Lead Time`)
-  - Create a pivot showing how average holding cost changes with lead time
+  - Generate a pivot table showing how average holding cost changes with lead time
   - Visualize results with a bar chart
 
 ---
@@ -45,31 +45,26 @@ By simulating different lead times and calculating their impact, this analysis s
 
 ---
 
-## Project Goal
-
-- **Data:** DMart sample sales data (`DMart_sales.csv`)
-- **Goal:** Show how varying lead times affect average inventory holding costs
-- **Key Metric:** 'Holding Cost = Total × Daily Holding Rate × Lead Time'
-
----
-
 ## How To Run
 
 1. Clone this repo.
 2. Create a virtual environment & install dependencies:
-   ```bash
-   pip install pandas numpy matplotlib
+   ''' bash
+   pip install pandas numpy matplotlib '''
 3. Run Add_lead_time.py to add the Lead_Time column and save a new CSV.
 4. Run DMart_analysis.py to calculate, group, and plot the trend.
-5. See the interactive dashboard: Tableau Public Dashboard
+5. View the interactive dashboard: [Tableau Public]
    [https://public.tableau.com/app/profile/mounisha.u/viz/DMart_LeadTime_HoldingCost/DMartImpactofLeadTimeonInventoryHoldingCost]
+## Screenshot 
+
+<img width="476" height="490" alt="dashboard_screenshot" src="https://github.com/user-attachments/assets/32311da0-5cc5-4d5e-8d54-b0334f909691" />
 
 ---
 
 ## Outcome
 
 This project shows practical data wrangling and visualization skills using realistic retail data.  
-It connects supply chain lead time with a key business metric: inventory holding cost — valuable for retailers and supply chain analysts.
+It demonstrates how supply chain lead time directly drives inventory costs - insights any retail analyst or procurement team can act on.
 
 ---
 
